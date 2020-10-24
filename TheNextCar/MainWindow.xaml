@@ -1,0 +1,20 @@
+﻿<Window x:Class="TheNextCar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TheNextCar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="458" Width="635">
+    <Grid Height="448" VerticalAlignment="Top">
+        <Button x:Name="StartButton" Content="STOPPED" HorizontalAlignment="Left" Margin="55,345,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="bold" Background="Red" Foreground="White" Click="OnStartButtonClicked"/>
+        <Button x:Name="DoorOpenButton" Content="CLOSE" HorizontalAlignment="Left" Margin="216,345,0,0" VerticalAlignment="Top" FontSize="16" Click="OnDoorOpenButtonClicked" Background="#FF3075EE" Foreground="Black"/>
+        <Button x:Name="LockDoorButton" Content="LOCK" HorizontalAlignment="Left" Margin="365,345,0,0" VerticalAlignment="Top" FontSize="16" Click="OnLockDoorButtonClicked" Background="#FF3179F2"/>
+        <Button x:Name="AccuButton" Content="OFF" HorizontalAlignment="Left" Margin="525,345,0,0" VerticalAlignment="Top" FontSize="16" Click="OnAccuButtonClicked" Background="#FF3175F2"/>
+        <Label Name="Status" Content="Engine Stopped" HorizontalAlignment="Left" Margin="31,387,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Name="DoorOpenState" Content="Door is opened" HorizontalAlignment="Left" Margin="181,387,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Name="LockDoorState" Content="Door is unlocked" HorizontalAlignment="Left" Margin="321,387,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Name="AccuState" Content="No power" HorizontalAlignment="Left" Margin="501,387,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Image HorizontalAlignment="Left" Height="314" Margin="36,10,0,0" VerticalAlignment="Top" Width="571" Source="/Assets/navigation.jpg"/>
+    </Grid>
+</Window>
